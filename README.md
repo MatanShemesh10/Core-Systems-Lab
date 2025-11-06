@@ -30,4 +30,23 @@ For details, see:
 
 ---
 
+### Bank Queue Manager (C++)
+
+A compact, **production-minded C++ demo** that models a realistic bank counter queue system.
+This project demonstrates practical engineering decisions around **ownership**, **polymorphism**, **deterministic scheduling**, and **efficient cancellation semantics** - all implemented in clean, interview-friendly code.
+
+**Overview:**
+`BankQueueManager` simulates a queue where clients (Regular / VIP / Business) submit service requests such as deposits, withdrawals, checks, and transfers.
+It uses:
+
+* A polymorphic action model (`IServiceAction`)
+* Smart ownership with `std::unique_ptr` ("SMRT PTR")
+* A `std::set` ordered by a domain-specific comparator ensuring deterministic priority and FIFO order
+* Efficient cancellation by storing iterators from `set::insert`, reducing removals to **O(log n)**
+
+For full details, see:
+[`bank-queue-manager/README.md`](./bank-queue-manager/README.md)
+
+---
+
 *(Additional projects will be added over time as I continue expanding this lab.)*
