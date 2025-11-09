@@ -30,6 +30,23 @@ For details, see:
 
 ---
 
+### Featured Project: Custom Dict (HashMap)
+
+A fully functional **hash-based dictionary** implementation written from scratch in Python.  
+It features:
+
+* Linear probing for collision handling  
+* Dynamic resizing when load factor exceeds 0.66  
+* Lazy deletion via a dedicated `_Deleted` marker  
+* Full support for key-value operations (`get`, `set`, `pop`, `update`, `clear`, etc.)
+
+Includes a **benchmark tool** comparing its performance to Python’s built-in `dict`, showing identical average-case complexity (O(1)) while offering an inside view of how hash tables work under the hood.
+
+For details, see:  
+[`custom-hash-dictionary-implementation/README.md`](./custom-hash-dictionary-implementation/README.md)
+
+---
+
 ### Bank Queue Manager (C++)
 
 A compact, **production-minded C++ demo** that models a realistic bank counter queue system.
