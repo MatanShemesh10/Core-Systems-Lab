@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package drone;
+
+service ImageAnalyzer {
+  rpc AnalyzeObject (ObjectData) returns (AnalysisResult);
+}
+
+message ObjectData {
+  string drone_id = 1;
+  bytes image = 2;      // binary image data
+}
+
+message AnalysisResult {
+  string label = 1;      // result label
+  float confidence = 2;  // confidence level
+}
