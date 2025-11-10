@@ -10,7 +10,7 @@ Topics covered include:
 
 ---
 
-### Distributed Drone Analyzer (gRPC – C++ & Python)
+### Distributed Drone Analyzer (gRPC - C++ & Python)
 
 A **cross-language microservice demo** showing how distributed systems can communicate efficiently between C++ and Python using **gRPC**.
 
